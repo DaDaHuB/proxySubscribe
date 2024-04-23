@@ -36,6 +36,7 @@ proxy-groups: #代理组
     proxies:
       - ♻️ 自动选择
       - 😊 ChatGPT自动选择
+      - DIRECT
       - RackNerd_2024-5-6到期
       - YeCaoYun_2024-11-2到期
       - Raksmart_2024-12-4到期
