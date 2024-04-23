@@ -35,8 +35,6 @@ proxies: #代理服务器节点
   - {"type":"vless","name":"Raksmart.洛杉矶.浙江电信_2","server":"18.64.123.110","port":443,"uuid":"092116ad-81c7-4b40-be41-5530e7a485ab","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d28kmzdd0tie5s.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"d28kmzdd0tie5s.cloudfront.net"}}}
   - {"type":"vless","name":"Raksmart.洛杉矶.浙江电信_3","server":"216.137.41.123","port":443,"uuid":"092116ad-81c7-4b40-be41-5530e7a485ab","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"d28kmzdd0tie5s.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"d28kmzdd0tie5s.cloudfront.net"}}}
 
-
-
 proxy-groups: #代理组
 
   - name: 🚀 节点选择
@@ -50,17 +48,22 @@ proxy-groups: #代理组
       - Raksmart_2024-12-4到期
       - AKCloud_2025-4-11到期
       - YeCaoYun.香港.浙江华数_1
-      - YeCaoYun.香港.电信_1
-      - YeCaoYun.香港.移动_1
-      - AKCloud.香港.浙江华数_1
-      - Racknerd.圣何塞.浙江华数_1
-      - Raksmart.洛杉矶_1
       - YeCaoYun.香港.浙江华数_2
-      - YeCaoYun.香港.移动_2
+      - YeCaoYun.香港.电信_1
       - YeCaoYun.香港.电信_2
-      - Racknerd.圣何塞.浙江华数_2
-      - Raksmart.洛杉矶_2
+      - YeCaoYun.香港.移动_1
+      - YeCaoYun.香港.移动_2
+      - AKCloud.香港.浙江华数_1
       - AKCloud.香港.浙江华数_2
+      - AKCloud_香港_浙江电信_1
+      - AKCloud_香港_浙江电信_2
+      - Racknerd.圣何塞.浙江华数_1
+      - Racknerd.圣何塞.浙江华数_2
+      - Raksmart.洛杉矶.浙江华数_1
+      - Raksmart.洛杉矶.浙江华数_2
+      - Raksmart.洛杉矶.浙江电信_1
+      - Raksmart.洛杉矶.浙江电信_2
+      - Raksmart.洛杉矶.浙江电信_3
 
   - name: 😊 ChatGPT自动选择
     type: url-test
@@ -68,10 +71,13 @@ proxy-groups: #代理组
     interval: 300
     tolerance: 50
     proxies:
-    - YeCaoYun.香港.浙江华数_1
-    - YeCaoYun.香港.电信_1
-    - YeCaoYun.香港.移动_1
-    - Raksmart.洛杉矶_1
+      - AKCloud_2025-4-11到期
+      - YeCaoYun.香港.浙江华数_1
+      - YeCaoYun.香港.浙江华数_2
+      - YeCaoYun.香港.电信_1
+      - YeCaoYun.香港.电信_2
+      - YeCaoYun.香港.移动_1
+      - YeCaoYun.香港.移动_2
 
   - name: ♻️ 自动选择
     type: url-test
@@ -84,17 +90,22 @@ proxy-groups: #代理组
       - Raksmart_2024-12-4到期
       - AKCloud_2025-4-11到期
       - YeCaoYun.香港.浙江华数_1
-      - YeCaoYun.香港.电信_1
-      - YeCaoYun.香港.移动_1
-      - AKCloud.香港.浙江华数_1
-      - Racknerd.圣何塞.浙江华数_1
-      - Raksmart.洛杉矶_1
       - YeCaoYun.香港.浙江华数_2
-      - YeCaoYun.香港.移动_2
+      - YeCaoYun.香港.电信_1
       - YeCaoYun.香港.电信_2
-      - Racknerd.圣何塞.浙江华数_2
-      - Raksmart.洛杉矶_2
+      - YeCaoYun.香港.移动_1
+      - YeCaoYun.香港.移动_2
+      - AKCloud.香港.浙江华数_1
       - AKCloud.香港.浙江华数_2
+      - AKCloud_香港_浙江电信_1
+      - AKCloud_香港_浙江电信_2
+      - Racknerd.圣何塞.浙江华数_1
+      - Racknerd.圣何塞.浙江华数_2
+      - Raksmart.洛杉矶.浙江华数_1
+      - Raksmart.洛杉矶.浙江华数_2
+      - Raksmart.洛杉矶.浙江电信_1
+      - Raksmart.洛杉矶.浙江电信_2
+      - Raksmart.洛杉矶.浙江电信_3
 
   - name: 🎯 全球直连
     type: select
