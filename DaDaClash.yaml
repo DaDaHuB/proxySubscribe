@@ -21,6 +21,9 @@ proxies: #代理服务器节点
   - {"type":"vless","name":"YeCaoYun.香港.浙江华数_2","server":"18.65.183.75","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
   - {"type":"vless","name":"YeCaoYun.香港.电信_1","server":"3.163.251.212","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
   - {"type":"vless","name":"YeCaoYun.香港.电信_2","server":"13.33.89.106","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
+  - {"type":"vless","name":"YeCaoYun.香港.浙江电信_1","server":"54.230.174.123","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
+  - {"type":"vless","name":"YeCaoYun.香港.浙江电信_2","server":"13.249.163.154","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
+  - {"type":"vless","name":"YeCaoYun.香港.浙江电信_3","server":"13.249.174.165","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
   - {"type":"vless","name":"YeCaoYun.香港.移动_1","server":"204.246.169.85","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
   - {"type":"vless","name":"YeCaoYun.香港.移动_2","server":"54.230.86.43","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
   - {"type":"vless","name":"AKCloud.香港.浙江华数_1","server":"99.86.222.207","port":443,"uuid":"bdc7bd77-88a9-4394-e9ee-5a7816cc8861","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dah1g674k882c.cloudfront.net","ws-opts":{"path":"/","headers":{"host":"dah1g674k882c.cloudfront.net"}}}
@@ -49,6 +52,9 @@ proxy-groups: #代理组
       - AKCloud_2025-4-11到期
       - YeCaoYun.香港.浙江华数_1
       - YeCaoYun.香港.浙江华数_2
+      - YeCaoYun.香港.浙江电信_1
+      - YeCaoYun.香港.浙江电信_2
+      - YeCaoYun.香港.浙江电信_3
       - YeCaoYun.香港.电信_1
       - YeCaoYun.香港.电信_2
       - YeCaoYun.香港.移动_1
@@ -95,6 +101,9 @@ proxy-groups: #代理组
       - YeCaoYun.香港.电信_2
       - YeCaoYun.香港.移动_1
       - YeCaoYun.香港.移动_2
+      - YeCaoYun.香港.浙江电信_1
+      - YeCaoYun.香港.浙江电信_2
+      - YeCaoYun.香港.浙江电信_3
       - AKCloud.香港.浙江华数_1
       - AKCloud.香港.浙江华数_2
       - AKCloud_香港_浙江电信_1
