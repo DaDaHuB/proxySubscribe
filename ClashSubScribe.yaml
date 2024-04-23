@@ -31,12 +31,33 @@ proxies: #代理服务器节点
   - {"type":"vless","name":"AKCloud.香港.浙江华数_2","server":"13.249.151.221","port":443,"uuid":"bdc7bd77-88a9-4394-e9ee-5a7816cc8861","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dah1g674k882c.cloudfront.net","ws-opts":{"path":"/","headers":{"host":"dah1g674k882c.cloudfront.net"}}}
 proxy-groups: #代理组
 
-  - { name: 🚀 节点选择 , type: select, proxies: [♻️ 自动选择,DIRECT,YeCaoYun_2024-11-2到期,Raksmart_2024-12-4到期,AKCloud_2025-4-11到期,YeCaoYun.香港.浙江华数_1,YeCaoYun.香港.电信_1,
-     YeCaoYun.香港.移动_1,AKCloud.香港.浙江华数_1,Racknerd.圣何塞.浙江华数_1,Raksmart.洛杉矶_1,YeCaoYun.香港.浙江华数_2,YeCaoYun.香港.移动_2,YeCaoYun.香港.电信_2,Racknerd.圣何塞.浙江华数_2,
-     Raksmart.洛杉矶_2,KCloud.香港.浙江华数_2]}
- 
-  - name: 😊 ChatGPT
+  - name: 🚀 节点选择
     type: select
+    proxies:
+      - ♻️ 自动选择
+      - 😊 ChatGPT自动选择
+      - RackNerd_2024-5-6到期
+      - YeCaoYun_2024-11-2到期
+      - Raksmart_2024-12-4到期
+      - AKCloud_2025-4-11到期
+      - YeCaoYun.香港.浙江华数_1
+      - YeCaoYun.香港.电信_1
+      - YeCaoYun.香港.移动_1
+      - AKCloud.香港.浙江华数_1
+      - Racknerd.圣何塞.浙江华数_1
+      - Raksmart.洛杉矶_1
+      - YeCaoYun.香港.浙江华数_2
+      - YeCaoYun.香港.移动_2
+      - YeCaoYun.香港.电信_2
+      - Racknerd.圣何塞.浙江华数_2
+      - Raksmart.洛杉矶_2
+      - AKCloud.香港.浙江华数_2
+
+  - name: 😊 ChatGPT自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
     proxies:
     - YeCaoYun.香港.浙江华数_1
     - YeCaoYun.香港.电信_1
@@ -73,34 +94,28 @@ proxy-groups: #代理组
 
 rules: #代理规则，可以定义域名全匹配，后缀匹配，域名关键字匹配，CIDR地址匹配
   - DOMAIN-SUFFIX,bulianglin.com,🚀 节点选择
-  - DOMAIN-SUFFIX,docker.com,🚀 节点选择
-	- DOMAIN-SUFFIX,yecaoyun.com,🚀 节点选择
-	- DOMAIN-SUFFIX,ip125.com,🚀 节点选择
-	- DOMAIN-SUFFIX,app.cloudcone.com.cn,🚀 节点选择
-	- DOMAIN-SUFFIX,vps.hosting,🚀 节点选择
-	- DOMAIN-SUFFIX,traffmonetizer.com,🚀 节点选择
-	- DOMAIN-SUFFIX,huobi.mw,🚀 节点选择
-	- DOMAIN-SUFFIX,vmiss.com,🚀 节点选择
-	- DOMAIN-SUFFIX,raksmart.com,🚀 节点选择
-	- DOMAIN-SUFFIX,exhentai.org,🚀 节点选择
-	- DOMAIN-SUFFIX,albums.ente.io,🚀 节点选择
-	- DOMAIN-SUFFIX,openai.com,🚀 节点选择
-	- DOMAIN-SUFFIX,godaddy.com,🚀 节点选择
-	- DOMAIN-SUFFIX,fast.com,🚀 节点选择
-	- DOMAIN-SUFFIX,speedtest.net,🚀 节点选择
-	- DOMAIN-SUFFIX,kjkkk.top,🚀 节点选择
-	- DOMAIN-SUFFIX,euserv.com,🚀 节点选择
-	- DOMAIN-SUFFIX,gcore.com,🚀 节点选择
-	- DOMAIN-SUFFIX,sms-activate.org,🚀 节点选择
-	- DOMAIN-SUFFIX,ybfl.xyz,🚀 节点选择
-	- DOMAIN-SUFFIX,cloudflare.com,🚀 节点选择
-	- DOMAIN-SUFFIX,ssh.hax.co.id,🚀 节点选择
-	- DOMAIN-SUFFIX,vultr.com,🚀 节点选择
-	- DOMAIN-SUFFIX,bulianglin.com,🚀 节点选择
-	- DOMAIN-SUFFIX,revivehost.com,🚀 节点选择
-	- DOMAIN-SUFFIX,racknerd.com,🚀 节点选择
-	- DOMAIN-SUFFIX,ping.pe,🚀 节点选择
-	- DOMAIN-SUFFIX,149.154,🚀 节点选择
+  - DOMAIN-SUFFIX,yecaoyun.com,🚀 节点选择
+  - DOMAIN-SUFFIX,ip125.com,🚀 节点选择
+  - DOMAIN-SUFFIX,vps.hosting,🚀 节点选择
+  - DOMAIN-SUFFIX,traffmonetizer.com,🚀 节点选择
+  - DOMAIN-SUFFIX,huobi.mw,🚀 节点选择
+  - DOMAIN-SUFFIX,vmiss.com,🚀 节点选择
+  - DOMAIN-SUFFIX,raksmart.com,🚀 节点选择
+  - DOMAIN-SUFFIX,exhentai.org,🚀 节点选择
+  - DOMAIN-SUFFIX,albums.ente.io,🚀 节点选择
+  - DOMAIN-SUFFIX,openai.com,🚀 节点选择
+  - DOMAIN-SUFFIX,godaddy.com,🚀 节点选择
+  - DOMAIN-SUFFIX,speedtest.net,🚀 节点选择
+  - DOMAIN-SUFFIX,kjkkk.top,🚀 节点选择
+  - DOMAIN-SUFFIX,euserv.com,🚀 节点选择
+  - DOMAIN-SUFFIX,gcore.com,🚀 节点选择
+  - DOMAIN-SUFFIX,sms-activate.org,🚀 节点选择
+  - DOMAIN-SUFFIX,ybfl.xyz,🚀 节点选择
+  - DOMAIN-SUFFIX,cloudflare.com,🚀 节点选择
+  - DOMAIN-SUFFIX,ssh.hax.co.id,🚀 节点选择
+  - DOMAIN-SUFFIX,vultr.com,🚀 节点选择
+  - DOMAIN-SUFFIX,revivehost.com,🚀 节点选择
+  - DOMAIN-SUFFIX,racknerd.com,🚀 节点选择
   - IP-CIDR,95.161.0.0/16,🚀 节点选择,no-resolve
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
