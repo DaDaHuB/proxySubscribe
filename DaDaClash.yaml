@@ -24,7 +24,7 @@ proxies:
   - {"type":"vless","name":"YeCaoYun_香港华数CDN_2","server":"54.230.184.173","port":443,"uuid":"054938a6-d3c1-4849-f798-eccb399b0f4d","skip-cert-verify":true,"udp":true,"tls":true,"network":"ws","servername":"dbd080aesmt1k.cloudfront.net","ws-opts":{"path":"/proxy","headers":{"host":"dbd080aesmt1k.cloudfront.net"}}}
 proxy-groups:
     - { name: 节点, type: select, proxies: [自动选择,  YeCaoYun_2024-11-2到期,Raksmart_2024-12-4到期, YeCaoYun_香港直连, YeCaoYun_香港.Reality, YeCaoYun_香港华数CDN_1,YeCaoYun_香港华数CDN_2] }
-    - { name: 自动选择, type: url-test, proxies: [RackNerd_2024-5-6到期, YeCaoYun_2024-11-2到期,Raksmart_2024-12-4到期, YeCaoYun_香港直连, YeCaoYun_香港.Reality, YeCaoYun_香港华数CDN_1,YeCaoYun_香港华数CDN_2], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
+    - { name: 自动选择, type: url-test, proxies: [ YeCaoYun_2024-11-2到期,Raksmart_2024-12-4到期, YeCaoYun_香港直连, YeCaoYun_香港.Reality, YeCaoYun_香港华数CDN_1,YeCaoYun_香港华数CDN_2], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
 
 rules:
     - DOMAIN-SUFFIX,bulianglin.com,节点
