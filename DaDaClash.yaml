@@ -25,7 +25,6 @@ proxies:
 proxy-groups:
     - { name: 节点, type: select, proxies: [自动选择,  YeCaoYun_2024-11-2到期,Raksmart_2024-12-4到期, YeCaoYun_香港直连, YeCaoYun_香港.Reality, YeCaoYun_香港华数CDN_1,YeCaoYun_香港华数CDN_2] }
     - { name: 自动选择, type: url-test, proxies: [RackNerd_2024-5-6到期, YeCaoYun_2024-11-2到期,Raksmart_2024-12-4到期, YeCaoYun_香港直连, YeCaoYun_香港.Reality, YeCaoYun_香港华数CDN_1,YeCaoYun_香港华数CDN_2], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
-#   - { name: ChatGPT, type: fallback, proxies: [ YeCaoYun.香港.浙江华数_1,YeCaoYun.香港.浙江华数_2,YeCaoYun.香港.电信_1,YeCaoYun.香港.电信_2,YeCaoYun.香港.浙江电信_1,YeCaoYun.香港.浙江电信_2,YeCaoYun.香港.浙江电信_3,YeCaoYun.香港.移动_1,YeCaoYun.香港.移动_2], url: 'http://www.gstatic.com/generate_204', interval: 7200 }
 
 rules:
     - DOMAIN-SUFFIX,bulianglin.com,节点
