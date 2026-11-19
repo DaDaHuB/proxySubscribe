@@ -13,7 +13,7 @@ proxies:
   client-fingerprint: chrome
   reality-opts:
     public-key: -GlNkHEyLatb1-CKZifHDU0CTTOISekBsh6x1gT1lg0
-    short-id: '2580'
+    short-id: 'aii2n53sxz0A&s9'
 - name: 野草云_香港Reality
   type: vless
   server: 38.207.179.160
